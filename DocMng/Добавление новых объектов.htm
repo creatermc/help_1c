@@ -1,0 +1,1428 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Добавление новых объектов в конфигурации, содержащие БИД</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Batang;
+	panose-1:2 3 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:FuturisC;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:FreeSetC;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Arial Narrow";
+	panose-1:2 11 6 6 2 2 2 3 2 4;}
+@font-face
+	{font-family:"\@Batang";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+h1
+	{mso-style-link:"Заголовок 1 Знак";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0cm;
+	margin-left:42.55pt;
+	text-align:right;
+	line-height:120%;
+	page-break-after:avoid;
+	text-autospace:none;
+	font-size:22.0pt;
+	font-family:FuturisC;
+	color:black;
+	text-transform:uppercase;
+	letter-spacing:1.1pt;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Заголовок 2 Знак";
+	margin-top:19.85pt;
+	margin-right:0cm;
+	margin-bottom:9.9pt;
+	margin-left:0cm;
+	line-height:120%;
+	page-break-after:avoid;
+	text-autospace:none;
+	font-size:14.0pt;
+	font-family:FreeSetC;
+	color:black;
+	text-transform:uppercase;
+	letter-spacing:.1pt;}
+h3
+	{mso-style-link:"Заголовок 3 Знак";
+	margin-top:11.35pt;
+	margin-right:0cm;
+	margin-bottom:8.5pt;
+	margin-left:0cm;
+	line-height:120%;
+	page-break-after:avoid;
+	text-autospace:none;
+	font-size:14.0pt;
+	font-family:FreeSetC;
+	color:black;
+	letter-spacing:.1pt;}
+h4
+	{margin-top:11.35pt;
+	margin-right:0cm;
+	margin-bottom:8.5pt;
+	margin-left:42.55pt;
+	line-height:120%;
+	page-break-after:avoid;
+	text-autospace:none;
+	font-size:11.0pt;
+	font-family:FreeSetC;
+	color:black;
+	letter-spacing:.1pt;}
+h5
+	{margin-top:11.35pt;
+	margin-right:0cm;
+	margin-bottom:8.5pt;
+	margin-left:42.55pt;
+	line-height:120%;
+	page-break-after:avoid;
+	text-autospace:none;
+	font-size:11.0pt;
+	font-family:FreeSetC;
+	color:black;
+	letter-spacing:.1pt;
+	font-weight:normal;}
+h6
+	{margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:-1.0cm;
+	page-break-after:avoid;
+	border:none;
+	padding:0cm;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:normal;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:-1.0cm;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Verdana",sans-serif;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:-1.0cm;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Verdana",sans-serif;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	font-size:9.0pt;
+	font-family:"Verdana",sans-serif;
+	font-weight:bold;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	text-transform:uppercase;
+	font-weight:bold;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	font-variant:small-caps;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:24.0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	font-style:italic;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:48.0pt;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:84.0pt;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:96.0pt;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Верхний колонтитул Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Нижний колонтитул Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	font-size:9.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoCaptionCxSpFirst, li.MsoCaptionCxSpFirst, div.MsoCaptionCxSpFirst
+	{margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoCaptionCxSpMiddle, li.MsoCaptionCxSpMiddle, div.MsoCaptionCxSpMiddle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoCaptionCxSpLast, li.MsoCaptionCxSpLast, div.MsoCaptionCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	font-size:9.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	font-size:20.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	background:navy;
+	font-size:10.0pt;
+	font-family:"Tahoma",sans-serif;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma",sans-serif;}
+span.1
+	{mso-style-name:"Заголовок 1 Знак";
+	mso-style-link:"Заголовок 1";
+	font-family:FuturisC;
+	color:black;
+	text-transform:uppercase;
+	letter-spacing:1.1pt;}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	mso-style-link:"Default Знак Знак";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:120%;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+span.2
+	{mso-style-name:"Заголовок 2 Знак";
+	mso-style-link:"Заголовок 2";
+	font-family:FreeSetC;
+	color:black;
+	text-transform:uppercase;
+	letter-spacing:.1pt;
+	font-weight:bold;}
+span.3
+	{mso-style-name:"Заголовок 3 Знак";
+	mso-style-link:"Заголовок 3";
+	font-family:FreeSetC;
+	color:black;
+	letter-spacing:.1pt;
+	font-weight:bold;}
+p.10, li.10, div.10
+	{mso-style-name:"Згл 1 многоур";
+	margin-top:130.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.2pt;
+	line-height:120%;
+	page-break-before:always;
+	page-break-after:avoid;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:14.0pt;
+	font-family:FuturisC;
+	color:black;
+	text-transform:uppercase;
+	letter-spacing:.7pt;}
+p.20, li.20, div.20
+	{mso-style-name:"Згл 2 многоур";
+	margin-top:19.85pt;
+	margin-right:0cm;
+	margin-bottom:9.9pt;
+	margin-left:42.55pt;
+	text-indent:-42.55pt;
+	line-height:120%;
+	page-break-after:avoid;
+	text-autospace:none;
+	font-size:14.0pt;
+	font-family:FreeSetC;
+	color:black;
+	text-transform:uppercase;
+	letter-spacing:.1pt;
+	font-weight:bold;}
+p.30, li.30, div.30
+	{mso-style-name:"Згл 3 многоур";
+	margin-top:11.35pt;
+	margin-right:0cm;
+	margin-bottom:8.5pt;
+	margin-left:42.55pt;
+	text-indent:-42.55pt;
+	line-height:120%;
+	page-break-after:avoid;
+	text-autospace:none;
+	font-size:14.0pt;
+	font-family:FreeSetC;
+	color:black;
+	letter-spacing:.1pt;
+	font-weight:bold;}
+span.a
+	{mso-style-name:"Параграф Знак Знак";
+	mso-style-link:Параграф;}
+p.a0, li.a0, div.a0
+	{mso-style-name:Параграф;
+	mso-style-link:"Параграф Знак Знак";
+	margin-right:0cm;
+	margin-left:0cm;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.a1
+	{mso-style-name:"маркированный Знак Знак";
+	mso-style-link:маркированный;}
+p.a2, li.a2, div.a2
+	{mso-style-name:маркированный;
+	mso-style-link:"маркированный Знак Знак";
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.9
+	{mso-style-name:"Стиль полужирный + 9 пт Знак";
+	mso-style-link:"Стиль полужирный + 9 пт";
+	font-family:"Verdana",sans-serif;
+	font-weight:bold;}
+p.90, li.90, div.90
+	{mso-style-name:"Стиль полужирный + 9 пт";
+	mso-style-link:"Стиль полужирный + 9 пт Знак";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.a3
+	{mso-style-name:"Стиль Васильковый + полужирный Знак";
+	mso-style-link:"Стиль Васильковый + полужирный";
+	font-family:"Verdana",sans-serif;
+	color:#0066CC;
+	font-weight:bold;}
+p.a4, li.a4, div.a4
+	{mso-style-name:"Стиль Васильковый + полужирный";
+	mso-style-link:"Стиль Васильковый + полужирный Знак";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:#0066CC;
+	font-weight:bold;}
+span.a5
+	{mso-style-name:"Стиль полужирный + не полужирный Знак";
+	mso-style-link:"Стиль полужирный + не полужирный";
+	font-family:"Verdana",sans-serif;
+	font-weight:bold;}
+p.a6, li.a6, div.a6
+	{mso-style-name:"Стиль полужирный + не полужирный";
+	mso-style-link:"Стиль полужирный + не полужирный Знак";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.a7, li.a7, div.a7
+	{mso-style-name:"Стиль маркированный";
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:18.0pt;
+	text-align:justify;
+	text-indent:-18.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.Default0
+	{mso-style-name:"Default Знак Знак";
+	mso-style-link:Default;
+	font-family:Batang;
+	color:black;}
+span.List
+	{mso-style-name:"List Знак Знак";
+	mso-style-link:List;
+	font-family:Batang;
+	color:black;}
+p.List0, li.List0, div.List0
+	{mso-style-name:List;
+	mso-style-link:"List Знак Знак";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:2.0cm;
+	text-align:justify;
+	text-indent:-14.15pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+p.Bullet2, li.Bullet2, div.Bullet2
+	{mso-style-name:"Bullet 2";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:70.85pt;
+	text-align:justify;
+	text-indent:-14.15pt;
+	line-height:120%;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+p.Notes, li.Notes, div.Notes
+	{mso-style-name:Notes;
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:8.5pt;
+	margin-left:70.9pt;
+	text-align:justify;
+	line-height:12.0pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;}
+p.Picture, li.Picture, div.Picture
+	{mso-style-name:Picture;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:right;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.Warningword, li.Warningword, div.Warningword
+	{mso-style-name:"Warning word";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:70.9pt;
+	text-align:justify;
+	line-height:12.0pt;
+	page-break-after:avoid;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.Number, li.Number, div.Number
+	{mso-style-name:Number;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:2.0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-14.15pt;
+	line-height:120%;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+p.Table, li.Table, div.Table
+	{mso-style-name:Table;
+	mso-style-link:"Table Знак Знак";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.a8
+	{mso-style-name:"Стиль Параграф + Васильковый Знак";
+	mso-style-link:"Стиль Параграф + Васильковый";
+	color:#0066CC;}
+p.a9, li.a9, div.a9
+	{mso-style-name:"Стиль Параграф + Васильковый";
+	mso-style-link:"Стиль Параграф + Васильковый Знак";
+	margin-right:0cm;
+	margin-left:0cm;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:#0066CC;}
+p.Pictures, li.Pictures, div.Pictures
+	{mso-style-name:Pictures;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:42.55pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+p.PictureDescription, li.PictureDescription, div.PictureDescription
+	{mso-style-name:"Picture Description";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:120%;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+span.Interface
+	{mso-style-name:Interface;
+	font-family:"Times New Roman",serif;
+	color:black;
+	font-weight:bold;
+	vertical-align:baseline;}
+span.Term
+	{mso-style-name:Term;
+	color:windowtext;
+	font-weight:bold;
+	font-style:italic;}
+p.aa, li.aa, div.aa
+	{mso-style-name:Рисунок;
+	margin-right:0cm;
+	margin-left:0cm;
+	text-align:center;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.Paragraph0c, li.Paragraph0c, div.Paragraph0c
+	{mso-style-name:"Paragraph 0 c перносом";
+	mso-style-link:"Paragraph 0 c перносом Знак";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.8pt;
+	margin-left:42.55pt;
+	text-align:justify;
+	line-height:120%;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+p.TextinTable81, li.TextinTable81, div.TextinTable81
+	{mso-style-name:"Text in Table 81";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;}
+span.Table0
+	{mso-style-name:"Table Знак Знак";
+	mso-style-link:Table;}
+p.DefaultBold, li.DefaultBold, div.DefaultBold
+	{mso-style-name:"Default Bold";
+	mso-style-link:"Default Bold Знак";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:120%;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;
+	font-weight:bold;}
+span.DefaultBold0
+	{mso-style-name:"Default Bold Знак";
+	mso-style-link:"Default Bold";
+	font-family:Batang;
+	color:black;
+	font-weight:bold;}
+p.Tablebold, li.Tablebold, div.Tablebold
+	{mso-style-name:"Table bold";
+	mso-style-link:"Table bold Знак";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Tablebold0
+	{mso-style-name:"Table bold Знак";
+	mso-style-link:"Table bold";
+	font-weight:bold;}
+p.Bullet1, li.Bullet1, div.Bullet1
+	{mso-style-name:"Bullet 1";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:2.85pt;
+	margin-left:2.0cm;
+	text-align:justify;
+	text-indent:-14.15pt;
+	line-height:120%;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+span.bold
+	{mso-style-name:bold;
+	color:navy;
+	font-weight:bold;
+	vertical-align:baseline;}
+span.Paragraph0c0
+	{mso-style-name:"Paragraph 0 c перносом Знак";
+	mso-style-link:"Paragraph 0 c перносом";
+	font-family:Batang;
+	color:black;}
+span.ab
+	{mso-style-name:ВнутритекстовыйЗаголовок;
+	font-family:"Arial Narrow",sans-serif;
+	letter-spacing:0pt;
+	font-weight:bold;}
+p.Bullet0, li.Bullet0, div.Bullet0
+	{mso-style-name:"Bullet 0";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:2.85pt;
+	margin-left:56.15pt;
+	text-align:justify;
+	line-height:120%;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+span.ac
+	{mso-style-name:"Нижний колонтитул Знак";
+	mso-style-link:"Нижний колонтитул";}
+span.ad
+	{mso-style-name:"Верхний колонтитул Знак";
+	mso-style-link:"Верхний колонтитул";}
+ /* Page Definitions */
+ @page WordSection1
+	{size:21.0cm 842.0pt;
+	margin:1.0cm 1.0cm 1.0cm 2.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=RU link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<p class=MsoTitle><a name="_Toc338543006">Добавление новых объектов в
+конфигурации, содержащие БИД</a></p>
+
+<p class=Default><a name="_Toc415848151"></a><a name="_Toc338543008"></a><a
+name="_Toc338682622"></a><a name="_Toc340141993"></a><a name="_Toc341356299"></a><a
+name="_Toc341356361"></a>При добавлении новых объектов метаданных в
+конфигурации, содержащие Библиотеку интеграции с 1С:Документооборотом, следует:</p>
+
+<p class=Default style='margin-left:2.0cm;text-indent:-1.0cm'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Определить, понадобится ли пользователям возможность интеграции с
+1С:Документооборотом по этим объектам, и в каком объеме для этих объектов могут
+быть востребованы возможности 1С:Документооборота.</p>
+
+<p class=Default style='margin-left:2.0cm;text-indent:-1.0cm'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>При необходимости включить эти объекты в тип параметра общих команд
+Библиотеки, внести изменения в модули форм этих объектов и в переопределяемые
+общие модули.</p>
+
+<h2>1. Нужна ли интеграция?</h2>
+
+<p class=Default><a name="IssOgl1_2.1_Перенос_объектов_метаданных_"></a>Библиотека
+поддерживает:</p>
+
+<p class=Default style='margin-left:58.1pt;text-indent:-29.4pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Хранение присоединенных файлов в 1С:Документообороте.</p>
+
+<p class=Default style='margin-left:58.1pt;text-indent:-29.4pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Создание в 1С:Документообороте архива документов, созданных в
+интегрируемой конфигурации.</p>
+
+<p class=Default style='margin-left:58.1pt;text-indent:-29.4pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Запуск бизнес-процессов, например, согласования, на основании объектов
+интегрированной системы.</p>
+
+<p class=Default style='margin-left:58.1pt;text-indent:-29.4pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Создание исходящих писем на основании этих объектов.</p>
+
+<p class=Default style='margin-left:58.1pt;text-indent:-29.4pt'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Учет трудозатрат и хронометраж.</p>
+
+<p class=Default>Для большинства прикладных справочников и документов окажется
+востребованной хотя бы одна из этих возможностей. Как правило, в интеграции не
+участвуют лишь скрытые от пользователей объекты и те объекты, с которыми
+взаимодействуют только администраторы.</p>
+
+<b><span style='font-size:14.0pt;line-height:120%;font-family:FreeSetC;
+color:black;text-transform:uppercase;letter-spacing:.1pt'><br clear=all
+style='page-break-before:always'>
+</span></b>
+
+<h2>2. как это выглядит в пользовательском интерфейсе?</h2>
+
+<p class=MsoNormal>Типичная форма интегрированного объекта (на примере <b>Заказа
+клиента</b> из <b>1С:ERP Управление предприятием</b>):</p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=567
+height=322 src="Добавление%20новых%20объектов.files/image001.jpg"></p>
+
+<p class=MsoNormal style='text-align:justify'>В панели навигации есть команда <b>Документооборот</b>,
+в подменю создания на основании – команды создания процессов и писем, в
+командной панели – кнопки хронометража. Кроме того, подменю печати может
+содержать команду печати листа согласования, а командная панель – кнопку перехода
+к списку присоединенных файлов.</p>
+
+<h2><a name="_Toc415848152"></a><a name="_Toc340141997"></a><a
+name="_Toc338682625"></a><a name="_Toc338543011"></a><a
+name="_Настройка_объектов_библиотеки"></a>3. подключение новых объектов</h2>
+
+<p class=Default>Большинство действий по подключению новых объектов не зависит
+от того, какой объем возможностей интеграции представляется потенциально востребованным
+для объектов этого типа. Исключением является запуск бизнес-процессов, создание
+писем, быстрый переход к присоединенным файлам и печать листа согласования,
+которые требуют особого подхода и будут описаны отдельно.</p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'>Действия, выполняемые при
+подключении новых объектов, даны ниже в таком формате:</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=0
+ style='width:515.7pt;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=192 valign=top style='width:143.7pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:#999999'>Тип
+  изменяемого объекта</span></p>
+  </td>
+  <td width=466 valign=top style='width:349.75pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:#999999'>Изменяемый
+  объект</span></p>
+  </td>
+  <td width=30 valign=top style='width:22.25pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:#999999'>№</span></p>
+  </td>
+ </tr>
+ <tr style='height:27.65pt'>
+  <td width=688 colspan=3 valign=top style='width:515.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:27.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:#999999'>Выполняемые
+  действия</span></p>
+  </td>
+ </tr>
+ <tr style='height:26.65pt'>
+  <td width=688 colspan=3 valign=top style='width:515.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:#999999'>Видимый
+  эффект</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm'><b>Важно</b>: При проверке эффекта от внесенных изменений
+убедитесь в том, что включены все функциональные опции в панели настройки
+интеграции.</p>
+
+<b><span style='font-size:14.0pt;line-height:120%;font-family:FreeSetC;
+color:black;text-transform:uppercase;letter-spacing:.1pt'><br clear=all
+style='page-break-before:always'>
+</span></b>
+
+<h2>3.1 Общие действия</h2>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=0
+ style='width:515.7pt;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=192 valign=top style='width:144.0pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Определяемый тип</span></p>
+  </td>
+  <td width=468 valign=top style='width:351.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>ИнтеграцияС1СДокументооборотВсеСсылкиПереопределяемый</span></p>
+  </td>
+  <td width=28 valign=top style='width:20.7pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>1</p>
+  </td>
+ </tr>
+ <tr style='height:27.65pt'>
+  <td width=688 colspan=3 valign=top style='width:515.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:27.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Ссылка на объект включается
+  в определяемый тип.</span></p>
+  </td>
+ </tr>
+ <tr style='height:26.65pt'>
+  <td width=688 colspan=3 valign=top style='width:515.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>В панели навигации формы
+  объекта появляется команда <b>Документооборот</b>.</span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt'>В подменю <b>Создать на основании</b>
+  (в зависимости от настроек) появляется команда:</span></p>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Документооборот: Процесс
+  </span></b><span style='font-size:10.0pt'>или <b>Документооборот: Письмо </b>или
+  <b>Документооборот: Начать обработку</b></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=0
+ style='width:515.7pt;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=192 valign=top style='width:144.0pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>План обмена</span></p>
+  </td>
+  <td width=468 valign=top style='width:351.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>ИнтеграцияС1СДокументооборотомПереопределяемый</span></p>
+  </td>
+  <td width=28 valign=top style='width:20.7pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>2</p>
+  </td>
+ </tr>
+ <tr style='height:27.65pt'>
+  <td width=688 colspan=3 valign=top style='width:515.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:27.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Объект включается в состав
+  плана обмена.</span></p>
+  </td>
+ </tr>
+ <tr style='height:26.65pt'>
+  <td width=688 colspan=3 valign=top style='width:515.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Без видимого эффекта:
+  необходимо для получения и отправки в 1С:Документооборот изменений связанных
+  объектов с помощью регламентного задания <b>ИнтеграцияС1СДокументооборотВыполнитьОбменДанными</b>.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=0
+ style='width:515.7pt;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=192 valign=top style='width:144.0pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Определяемый тип</span></p>
+  </td>
+  <td width=468 valign=top style='width:351.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>ИнтеграцияС1СДокументооборотДокументыОбъектыПереопределяемый</span></p>
+  </td>
+  <td width=28 valign=top style='width:20.7pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>3</p>
+  </td>
+ </tr>
+ <tr style='height:27.65pt'>
+  <td width=688 colspan=3 valign=top style='width:515.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:27.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Только для документов. Документ
+  объект включается в определяемый тип.</span></p>
+  </td>
+ </tr>
+ <tr style='height:26.65pt'>
+  <td width=688 colspan=3 valign=top style='width:515.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Без видимого эффекта:
+  включает документ в подписки на событие <b>ИнтеграцияС1СДокументооборотОбработкаЗаполненияДокументы
+  </b>и <b>ИнтеграцияС1СДокументооборотПередЗаписьюДокумента</b>. Используется
+  при создании документов в интегрированной системе на основании документов из
+  1С:Документооборота.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=0
+ style='width:515.7pt;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=192 valign=top style='width:144.0pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Определяемый тип</span></p>
+  </td>
+  <td width=468 valign=top style='width:351.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>ИнтеграцияС1СДокументооборотСправочникиОбъектыПереопределяемый</span></p>
+  </td>
+  <td width=28 valign=top style='width:20.7pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>4</p>
+  </td>
+ </tr>
+ <tr style='height:27.65pt'>
+  <td width=688 colspan=3 valign=top style='width:515.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:27.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Только для справочников. Справочник
+  объект включается в определяемый тип.</span></p>
+  </td>
+ </tr>
+ <tr style='height:26.65pt'>
+  <td width=688 colspan=3 valign=top style='width:515.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Без видимого эффекта:
+  включает справочник в подписки на событие <b>ИнтеграцияС1СДокументооборотОбработкаЗаполненияСправочники
+  </b>и <b>ИнтеграцияС1СДокументооборотПередЗаписьюСправочника</b>.
+  Используется при создании справочников в интегрированной системе на основании
+  документов из 1С:Документооборота.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=0
+ style='width:515.15pt;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=192 valign=top style='width:144.0pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Модуль формы объекта</span></p>
+  </td>
+  <td width=468 valign=top style='width:351.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>ПриСозданииНаСервере</span></p>
+  </td>
+  <td width=27 valign=top style='width:20.15pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>5</span></p>
+  </td>
+ </tr>
+ <tr style='height:27.65pt'>
+  <td width=687 colspan=3 valign=top style='width:515.15pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:27.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>При использовании
+  стандартной командной панели формы добавляется код:</span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Courier New"'>//
+  ИнтеграцияС1СДокументооборотом</span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='font-size:8.0pt;
+  line-height:150%;font-family:"Courier New"'>ИнтеграцияС1СДокументооборотБазоваяФункциональность.ПриСозданииНаСервере(ЭтаФорма);</span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='font-size:8.0pt;
+  line-height:150%;font-family:"Courier New"'>// Конец
+  ИнтеграцияС1Сдокументооборотом</span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt'>При использовании собственных
+  групп команд добавляется код:</span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Courier New"'>//
+  ИнтеграцияС1СДокументооборотом</span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='font-size:8.0pt;
+  line-height:150%;font-family:"Courier New"'>ИнтеграцияС1СДокументооборотБазоваяФункциональность.ПриСозданииНаСервере(ЭтаФорма,
+  &lt;ГруппаКоманды&gt;);</span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='font-size:8.0pt;
+  line-height:150%;font-family:"Courier New"'>// Конец
+  ИнтеграцияС1СДокументооборотом</span></p>
+  </td>
+ </tr>
+ <tr style='height:26.65pt'>
+  <td width=687 colspan=3 valign=top style='width:515.15pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>В командной панели формы
+  или в указанной группе появляются кнопки хронометража и создания
+  бизнес-процессов по шаблону.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=0
+ style='width:515.15pt;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=224 colspan=2 valign=top style='width:144.0pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Модуль формы объекта</span></p>
+  </td>
+  <td width=494 valign=top style='width:351.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>ПередЗаписьюНаСервере</span></p>
+  </td>
+  <td width=31 valign=top style='width:20.15pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>6</span></p>
+  </td>
+ </tr>
+ <tr style='height:27.65pt'>
+  <td width=749 colspan=4 valign=top style='width:515.15pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:27.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Добавляется код:</span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Courier New"'>//
+  ИнтеграцияС1СДокументооборотом</span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='font-size:8.0pt;
+  line-height:150%;font-family:"Courier New"'>ИнтеграцияС1СДокументооборотБазоваяФункциональность.ПередЗаписьюНаСервере(ЭтаФорма,
+  ТекущийОбъект, ПараметрыЗаписи);</span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='font-size:8.0pt;
+  line-height:150%;font-family:"Courier New"'>// Конец
+  ИнтеграцияС1Сдокументооборотом</span></p>
+  </td>
+ </tr>
+ <tr style='height:26.65pt'>
+  <td width=749 colspan=4 valign=top style='width:515.15pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Без видимого эффекта: используется
+  для передачи идентификатора объекта ДО при создании на основании.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=217 valign=top style='width:139.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Модуль формы объекта</span></p>
+  </td>
+  <td width=501 colspan=2 valign=top style='width:356.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Область
+  ОбработчикиКомандФормы</span></p>
+  </td>
+  <td width=31 valign=top style='width:20.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>7</span></p>
+  </td>
+ </tr>
+ <tr style='height:27.65pt'>
+  <td width=749 colspan=4 valign=top style='width:515.15pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:27.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Добавляется код:</span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Courier New"'>//
+  ИнтеграцияС1СДокументооборотом</span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Courier New"'>&amp;НаКлиенте</span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Courier New"'>Процедура
+  Подключаемый_ВыполнитьКомандуИнтеграции(Команда)</span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Courier New"'>ИнтеграцияС1СДокументооборотБазоваяФункциональностьКлиент.ВыполнитьПодключаемуюКомандуИнтеграции(Команда,
+  ЭтаФорма, Объект);</span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Courier New"'>КонецПроцедуры</span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Courier New"'>// Конец
+  ИнтеграцияС1Сдокументооборотом</span></p>
+  </td>
+ </tr>
+ <tr style='height:26.65pt'>
+  <td width=749 colspan=4 valign=top style='width:515.15pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Без видимого эффекта:
+  обеспечивает обработку команд кнопок, добавленных программно.</span></p>
+  </td>
+ </tr>
+ <tr height=0>
+  <td width=217 style='border:none'></td>
+  <td width=8 style='border:none'></td>
+  <td width=494 style='border:none'></td>
+  <td width=31 style='border:none'></td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=0
+ style='width:515.15pt;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=192 valign=top style='width:144.0pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Модуль формы списка</span></p>
+  </td>
+  <td width=468 valign=top style='width:351.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>ПриСозданииНаСервере</span></p>
+  </td>
+  <td width=27 valign=top style='width:20.15pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>8</span></p>
+  </td>
+ </tr>
+ <tr style='height:27.65pt'>
+  <td width=687 colspan=3 valign=top style='width:515.15pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:27.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>При использовании
+  стандартной командной панели формы добавляется код:</span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Courier New"'>//
+  ИнтеграцияС1СДокументооборотом</span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='font-size:8.0pt;
+  line-height:150%;font-family:"Courier New"'>ИнтеграцияС1СДокументооборотБазоваяФункциональность.ПриСозданииНаСервере(ЭтаФорма);</span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='font-size:8.0pt;
+  line-height:150%;font-family:"Courier New"'>// Конец
+  ИнтеграцияС1Сдокументооборотом</span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt'>При использовании собственных
+  групп команд добавляется код:</span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Courier New"'>//
+  ИнтеграцияС1СДокументооборотом</span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='font-size:8.0pt;
+  line-height:150%;font-family:"Courier New"'>ИнтеграцияС1СДокументооборотБазоваяФункциональность.ПриСозданииНаСервере(ЭтаФорма,
+  &lt;ГруппаКоманды&gt;);</span></p>
+  <p class=MsoNormal style='line-height:150%'><span style='font-size:8.0pt;
+  line-height:150%;font-family:"Courier New"'>// Конец
+  ИнтеграцияС1СДокументооборотом</span></p>
+  </td>
+ </tr>
+ <tr style='height:26.65pt'>
+  <td width=687 colspan=3 valign=top style='width:515.15pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>В командной панели формы
+  или в указанной при вызове группе появляются кнопки хронометража и создания
+  бизнес-процессов по шаблону.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=0
+ style='width:515.15pt;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=195 valign=top style='width:139.0pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Модуль формы списка</span></p>
+  </td>
+  <td width=517 valign=top style='width:356.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Область
+  ОбработчикиКомандФормы</span></p>
+  </td>
+  <td width=38 valign=top style='width:20.15pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>9</span></p>
+  </td>
+ </tr>
+ <tr style='height:27.65pt'>
+  <td width=749 colspan=3 valign=top style='width:515.15pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:27.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Добавляется код с передачей
+  элемента формы (таблицы), представляющего список объектов:</span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Courier New"'>//
+  ИнтеграцияС1СДокументооборотом</span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Courier New"'>&amp;НаКлиенте</span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Courier New"'>Процедура
+  Подключаемый_ВыполнитьКомандуИнтеграции(Команда)</span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Courier New"'>ИнтеграцияС1СДокументооборотБазоваяФункциональностьКлиент.ВыполнитьПодключаемуюКомандуИнтеграции(Команда,
+  ЭтаФорма, &lt;ТаблицаФормы&gt;);</span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Courier New"'>КонецПроцедуры</span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Courier New"'>// Конец
+  ИнтеграцияС1Сдокументооборотом</span></p>
+  </td>
+ </tr>
+ <tr style='height:26.65pt'>
+  <td width=749 colspan=3 valign=top style='width:515.15pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Без видимого эффекта:
+  обеспечивает обработку команд кнопок, добавленных программно.</span></p>
+  </td>
+ </tr>
+</table>
+
+<b><span style='font-size:14.0pt;line-height:120%;font-family:FreeSetC;
+color:black;text-transform:uppercase;letter-spacing:.1pt'><br clear=all
+style='page-break-before:always'>
+</span></b>
+
+<h2>3.2 Действия при использовании отдельных возможностей интеграции</h2>
+
+<p class=Default style='margin-bottom:6.0pt'>Следующие действия необходимы для
+использования бизнес процессов 1С:Документооборота. Для некоторых объектов,
+которые заведомо будут участвовать исключительно в процессе согласования, можно
+использовать только специализированную команду (подробнее об особенности
+запуска процесса согласования см. в документации БИД). Для остальных объектов следует
+использовать общую команду создания бизнес-процесса:</p>
+
+<p class=Default style='margin-bottom:6.0pt'>&nbsp;</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=0
+ style='width:515.7pt;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=192 valign=top style='width:144.0pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Общая команда</span></p>
+  </td>
+  <td width=468 valign=top style='width:351.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>ИнтеграцияС1СДокументооборотСоздатьПроцессСогласования</span></p>
+  </td>
+  <td width=28 valign=top style='width:20.7pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>10</span></p>
+  </td>
+ </tr>
+ <tr style='height:27.65pt'>
+  <td width=688 colspan=3 valign=top style='width:515.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:27.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Объект включается в тип
+  параметра команды.</span></p>
+  </td>
+ </tr>
+ <tr style='height:26.65pt'>
+  <td width=688 colspan=3 valign=top style='width:515.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>В подменю <b>Создать на
+  основании</b> появляется команда <b>Процесс согласования</b>.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=Default style='margin-top:0cm'>&nbsp;</p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm'>Следующие действия необходимы для объектов, по которым
+просматривается регулярное использование согласования с помощью
+1С:Документооборота.</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=0
+ style='width:515.7pt;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=182 valign=top style='width:144.0pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Общий модуль</span></p>
+  </td>
+  <td width=477 valign=top style='width:351.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>ИнтеграцияС1СДокументооборотБазоваяФункциональностьПереопределяемый</span></p>
+  </td>
+  <td width=28 valign=top style='width:20.7pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>11</span></p>
+  </td>
+ </tr>
+ <tr style='height:27.65pt'>
+  <td width=688 colspan=3 valign=top style='width:515.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:27.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>В процедуру
+  ПередДобавлениемКомандПечати по образцу в комментарии добавляется код, для
+  формы добавляемого объекта метаданных, добавляющий команду печати листа
+  согласования.</span></p>
+  </td>
+ </tr>
+ <tr style='height:26.65pt'>
+  <td width=688 colspan=3 valign=top style='width:515.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>В подменю печати объекта
+  появляется печатная форма <b>Лист согласования</b>.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=0
+ style='width:515.7pt;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=182 valign=top style='width:144.0pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Общий модуль</span></p>
+  </td>
+  <td width=477 valign=top style='width:351.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>ИнтеграцияС1СДокументооборотБазоваяФункциональностьПереопределяемый</span></p>
+  </td>
+  <td width=28 valign=top style='width:20.7pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>12</span></p>
+  </td>
+ </tr>
+ <tr style='height:27.65pt'>
+  <td width=688 colspan=3 valign=top style='width:515.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:27.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>В процедуру
+  ПриИзмененииСостоянияСогласования добавляется код, автоматически меняющий
+  статус документа интегрируемой конфигурации при изменении состояния
+  согласования в 1С:Документообороте.</span></p>
+  </td>
+ </tr>
+ <tr style='height:26.65pt'>
+  <td width=688 colspan=3 valign=top style='width:515.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Видимых изменений нет. Это
+  избавляет от необходимости настройки изменения статуса на внедрении, и
+  позволяет включить изменение состояния в 1С:Документообороте в бизнес-логику
+  интегрируемой конфигурации, если, например, изменение статуса документа влечет
+  за собой более сложные операции.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=Default style='margin-bottom:6.0pt'>&nbsp;</p>
+
+<p class=Default style='margin-bottom:6.0pt'>Следующее действие необходимо для быстрого
+доступа к присоединенным файлам из формы объекта. Без этого присоединенные
+файлы будут доступны только из формы <b>Документооборот</b>, открывающейся по
+команде в панели навигации. Имеет смысл для тех объектов, операции с файлами, которых
+– частотные и должны быть ближе по кликам.</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=0
+ style='width:515.7pt;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=191 valign=top style='width:143.15pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Общая команда</span></p>
+  </td>
+  <td width=466 valign=top style='width:349.75pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>ИнтеграцияС1СДокументооборотПрисоединенныеФайлы</span></p>
+  </td>
+  <td width=30 valign=top style='width:22.8pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>13</span></p>
+  </td>
+ </tr>
+ <tr style='height:27.65pt'>
+  <td width=688 colspan=3 valign=top style='width:515.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:27.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>Объект включается в тип
+  параметра команды.</span></p>
+  </td>
+ </tr>
+ <tr style='height:26.65pt'>
+  <td width=688 colspan=3 valign=top style='width:515.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.65pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>В панели навигации формы
+  объекта появляется команда <b>Присоединенные файлы</b></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
